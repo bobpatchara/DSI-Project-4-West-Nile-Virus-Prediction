@@ -1,13 +1,29 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) West Nile Virus Prediction
 
 ### Predict West Nile virus in mosquitoes across the city of Chicago
+---
 
-## Problem Statement
+### Problem Statement
 
 West Nile virus (WNV) is mosquito-borne disease. It is most commonly spread to people by the bite of an infected mosquito. As data scientists hired by CDC, We want to understand the factors driving the spread of WNV and suggest a cost-efficient method to handle with it.
 
-#### Data Dictionary
 ---
+### Executive Summary and Conclusion
+
+Out of all model, XGboost is the best performing model with a score at 96.65%  and ROC/AUC at 97.2% 
+
+<img width="327" alt="confusion_matrix" src="https://user-images.githubusercontent.com/76549565/113515336-13884080-959e-11eb-89ad-da95e1f752cb.png">
+
+Since we are concern about the prevention of the West Nile virus, it is acceptable that we lean heavily towards predicting that the Virus is presence even in places where there are no viruses. This is because those places have some possibilities of the virus being presence.
+
+<img width="803" alt="virus_indicators" src="https://user-images.githubusercontent.com/76549565/113515338-15ea9a80-959e-11eb-8627-bb444d414ea4.png">
+
+In conclusion, the main factors driving the spread of the West Nile virus (WNV) are the species of the mosquitos, the number of mosquitos, weather conditions, and the amount of daylight with in a certain period of time. Through our findings, we can conclude that the West Nile Virus is highly seasonal, becoming most prominent in July and August. This is due to the increase in the heat and mosquitos count. 
+
+Because our goal is to prevent the spread of the virus, it is recommended to spay in places that have any indications of the virus. As from our model, some places can have the possibility of the virus being presence when there isn’t at the time. From a cost standpoint, spraying in these places will be beneficial in the long run due to how the virus can impact a patient.
+
+---
+### Data Dictionary
 
 |Feature|Type|Dataset|Description|
 |---|---|---|---|
@@ -52,6 +68,9 @@ West Nile virus (WNV) is mosquito-borne disease. It is most commonly spread to p
 |AvgSpeed     |int|weather.csv| average wind speed (mph)
 
 The dataset, along with full description, can be found here: [https://www.kaggle.com/c/predict-west-nile-virus/](https://www.kaggle.com/c/predict-west-nile-virus/).
+
+---
+
 
 
 
