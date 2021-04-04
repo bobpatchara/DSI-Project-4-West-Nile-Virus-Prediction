@@ -10,6 +10,13 @@ West Nile virus (WNV) is mosquito-borne disease. It is most commonly spread to p
 ---
 ### Executive Summary and Conclusion
 
+| Model | Best Score | AOC/RUC |
+| --- | --- | --- |
+|Logistic Regression| 88.86% | 88.89% |
+|Decision Tree Classifier| 90.34% | 90.08% |
+|Random Forest Classifier| 90.83% | 90.63% |
+|XGBoost Classifier| 96.65% | 97.20% |
+
 Out of all model, XGboost is the best performing model with a score at 96.65%  and ROC/AUC at 97.2% 
 
 <img width="327" alt="confusion_matrix" src="https://user-images.githubusercontent.com/76549565/113515336-13884080-959e-11eb-89ad-da95e1f752cb.png">
